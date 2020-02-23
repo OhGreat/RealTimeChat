@@ -2,7 +2,7 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <%= form_for @message, remote: true do |m| %>
-    <%= m.text_field :content %>
+    <%= m.text_field :content, class: 'new_msg_form_content' %>
     <%= m.submit %>
 <% end %> 
 
